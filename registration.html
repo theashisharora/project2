@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1" action="welcome.html">
+        <label>Name:
+            <span id="nameErr" class="error"></span>
+            <input type="text" id="name">
+        </label>
+        <br>
+        <label>Password:
+            <span id="passwordErr" class="error"></span>
+            <input type="password" id="password">
+        </label>
+        <br>
+        <label>Confirm Password:
+            <span id="cPasswordErr" class="error"></span>
+            <input type="password" id="cPassword">
+        </label>
+        <br>
+        <label>Address:
+            <span id="addressErr" class="error"></span>
+            <input type="text" id="address">
+        </label>
+        <br>
+        <label>City:
+            <span id="cityErr" class="error"></span>
+            <select id="city">
+                <option value="-1">Select a City</option>
+                <option value="1">Toronto</option>
+                <option value="2">Montreal</option>
+                <option value="3">Vancouver</option>
+                <option value="4">Calgary</option>
+                <option value="5">Ottawa</option>
+                <option value="6">Edmonton</option>
+                <option value="7">Hamilton</option>
+                <option value="8">London</option>
+            </select>
+        </label><br>
+        <label>Language:
+            <span id="languageErr" class="error"></span>
+            <br>
+            <input type="checkbox" id="english" value="English">English
+            <input type="checkbox" id="nEnglish" value="NonEnglish">Non-English
+        </label>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+    <!-- No need for separate script.js -->
+    <script src="_Jscripts/script.js"></script>
+</body>
+</html>
